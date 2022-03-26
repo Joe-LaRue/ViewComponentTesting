@@ -1,0 +1,1 @@
+playing with view component examples from andrew lock blog post https://andrewlock.net/an-introduction-to-viewcomponents-a-login-status-view-component/
