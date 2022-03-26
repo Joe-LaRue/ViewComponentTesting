@@ -3,7 +3,14 @@ using ViewComponentTesting.Services;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddRazorPages();
+builder.Services.AddRazorPages()
+    .AddRazorOptions(x =>
+    {
+        // /Components/{View Component Name}/{View Name}.cshtml
+        x.ViewLocationFormats.Add("/{0}.cshtml");
+        x.PageViewLocationFormats.Add("/{0}.cshtml");
+
+    });
 
 builder.Services.AddTransient<IUserService,UserService>();
 
