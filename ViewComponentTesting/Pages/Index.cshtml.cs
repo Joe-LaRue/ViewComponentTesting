@@ -12,9 +12,5 @@ namespace ViewComponentTesting.Pages
             _logger = logger;
         }
 
-        public void OnGet()
-        {
-
-        }
     }
 }
